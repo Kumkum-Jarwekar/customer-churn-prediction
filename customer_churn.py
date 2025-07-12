@@ -1,6 +1,7 @@
 # 1️⃣ Import Libraries
 # -----------------------------
 import pandas as pd
+import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -113,3 +114,6 @@ plt.show()
 # -----------------------------
 print("The model has been successfully trained and evaluated.")
 print("You can now use this script to predict churn and interpret feature importance to guide business decisions.")
+
+joblib.dump(model, 'customer_churn_model.pkl')
+print("Model saved as 'customer_churn_model.pkl' using joblib.")
